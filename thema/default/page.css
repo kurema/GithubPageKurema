@@ -1,0 +1,66 @@
+﻿body{
+    background-color:#EEEEEE;
+}
+
+a {
+    all:unset;
+}
+
+header{
+    text-align:center;
+    font-family:Times,serif;
+}
+
+header h1{
+    font-size:80px;
+    color:darkslategray;
+}
+
+div[id=content]{
+    max-width:920px;
+    margin:0 auto;
+}
+
+header p{
+    font-size:20px;
+}
+
+main{
+    margin:0 30% 0 0;
+}
+
+main section{
+    margin:20px;
+    background-color:white;
+    font-family:游明朝;
+}
+
+main section h1{
+    font-size:42px;
+}
+
+aside[class=sidebar]{
+    width:30%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display:block;
+}
+
+aside[class=sidebar] div[class=widget]{
+    margin:10px;
+    /*background-color:white;*/
+}
+
+aside[class=sidebar] img[id=githubImage]{
+    max-width:50px;
+    max-height:50px;
+}
+
+footer{
+    text-align:center;
+    color:#999594;
+    font-family:Times,serif;
+    font-style:italic;
+    clear:both;
+}

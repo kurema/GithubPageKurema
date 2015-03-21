@@ -18,20 +18,34 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="info\siteinfo.xml" />
+    <Content Include="thema\default\page.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="schema\Link.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schema\AccountInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="schema\SiteInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
+    <Folder Include="widget\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
