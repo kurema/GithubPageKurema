@@ -53,7 +53,7 @@ class SiteInfomation {
 }
 
 class GithubApi {
-    APIUrl:string = "http://api.github.com";
+    APIUrl:string = "https://api.github.com";
     GetJSON(site: string, callback: (content: any) => void) {
         GithubApi.GetJSONSimple(this.APIUrl + site, callback);
     }
