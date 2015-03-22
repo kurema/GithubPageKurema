@@ -103,9 +103,13 @@ window.onload = () => {
         var githubImg = document.getElementById("githubImage");
         githubImg.setAttribute("src", content.avatar_url);
 
+        var githubUserLink = document.getElementById("githubUserLink");
+        githubUserLink.setAttribute("href", content.html_url);
+        githubUserLink.innerText = content.name;
+
         GithubApi.GetJSONSimple(content.repos_url, (contentRepo) => {
             for (var j = 0; j < contentRepo.length; j++) {
-                ContentManagement.AddSection("<h1>" + contentRepo[j].name + "</h1><p>" + contentRepo[j].description+"</p>");
+                ContentManagement.AddSection("<h1><a href='" + contentRepo[j].html_url+"'>" + contentRepo[j].name + "</a></h1><p>" + contentRepo[j].description+"</p>");
             }
         });
 
