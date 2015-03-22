@@ -31,16 +31,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="schema\Link.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="schema\AccountInfo.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="schema\SiteInfo.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="Scripts\typings\LICENSE" />
+    <Content Include="user\main\siteinfo.json">
+      <BrowseToURL>~/user/main/siteinfo.json</BrowseToURL>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
