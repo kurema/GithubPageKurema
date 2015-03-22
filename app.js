@@ -55,7 +55,7 @@ var SiteInfomation = (function () {
 
 var GithubApi = (function () {
     function GithubApi() {
-        this.APIUrl = "http://api.github.com";
+        this.APIUrl = "https://api.github.com";
     }
     GithubApi.prototype.GetJSON = function (site, callback) {
         GithubApi.GetJSONSimple(this.APIUrl + site, callback);
